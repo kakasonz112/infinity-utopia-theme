@@ -26,9 +26,11 @@ FOLLOW THIS FORMAT:
 }
 
 body {
-    color: white;
+    color: #e8e3d3; /* Slightly off-white text */
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    background-color: black;
+    background-color: #2a251f; /* Warmer, darker background */
+    background-image: url(./images/parchment.jpg); /* Subtle parchment texture */
+    background-repeat: repeat-y;
 }
 
 
@@ -40,39 +42,14 @@ body {
 }
 
 .navigation {
-
-    /* border styling */
-    border: 2px solid;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-
-    /* internal styling - padding etc. */
-
-    /* typography */
+    border: 2px solid #4a4332; /* Softer border color */
+    border-radius: 5px; 
     font-family: KnightsQuestRegular;
     font-size: 20px;
-    font-weight: normal;
     text-align: left;
-
-    -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    -webkit-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    text-shadow: -1px 1px 2px #000, 1px -1px 1px #ffcf68;
-    filter: glow(color=#252525,strength=3);
-
-    /* colors */
-    border-color: #555555;
-    -moz-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    -webkit-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-
-    background: #494432; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #7b7354 0%, #29261c 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7b7354), color-stop(100%,#29261c)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* W3C */
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer box shadow */
+    background: #5d5542; /* Simplified background */
 }
 
 .navigation a {
@@ -92,13 +69,9 @@ body {
 }
 
 #header-navigation div:hover {
-    /* display, opacity and special effects */
     opacity:1.0;
-    filter:alpha(opacity=100); /* For IE8 and earlier */
-    -moz-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 4px #7c4a14, 0px 8px 10px -6px #fff;;
-    -webkit-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 4px #7c4a14, 0px 8px 10px -6px #fff;;
-    box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000, 0px -8px 8px -6px #fff;
-
+    filter:alpha(opacity=100); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Simplified box shadow */
 }
 
 #account-container {
@@ -176,17 +149,8 @@ body {
 }
 
 #middle {
-    /* positioning and size */
-    /* border styling */
-    /* internal styling - padding etc. */
-    background-image: url(./images/leather.jpg);
-    background-repeat: repeat-y;
-    background-position: top left;
-    /* typography */
-    /* colors */
-    /* display, opacity and special effects */
-    box-shadow: 3px -3px 5px #191919, -10px 10px 10px #000;
-
+    background-image: none; /* Removed leather background */
+    box-shadow: none; /* Removed strong box shadow */
 }
 
 a {
@@ -208,16 +172,11 @@ a:hover {
     color: #fff;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: KnightsQuestRegular;
     font-weight: 200;
-    color: #fff;
-    -moz-text-shadow: -1px 1px 2px #000;
-    -webkit-text-shadow: -1px 1px 2px #000;
-    text-shadow: -1px 1px 2px #000;
-    filter: glow(color=#252525,strength=3);
+    color: #e8e3d3; /* Slightly off-white */
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
 }
 
 #footer {
@@ -227,19 +186,9 @@ h3 {
 
 .report-this {
     color: #c4a112;
-    background-color: #18100e;
-    border-bottom-left-radius: 8px 8px;
-    -moz-border-radius-bottomleft: 8px 8px;
-
-
-    -moz-box-shadow: 0px 3px 4px #000;
-    -webkit-box-shadow: 0px 3px 4px #000;
-    box-shadow: 0px 3px 4px #000;
-    /* For IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
-    /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
-
+    background-color: #221a16; /* Darker background */
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* Softer box shadow */
 }
 
 .report-this:hover {
@@ -270,47 +219,25 @@ h3 {
 .age-changes,
 .lobby-panel,
 .campaigns {
-    /* border styling */
-    border: 2px solid;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-
-
-    /* internal styling - padding etc. */
-
-    /* typography */
-    -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    -webkit-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    text-shadow: -1px 1px 2px #000, 1px -1px 1px #ffcf68;
-
-    /* colors */
-    border-color: #555555;
-    -moz-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    -webkit-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-
-    background: #494432; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #7b7354 0%, #29261c 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7b7354), color-stop(100%,#29261c)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* W3C */
-}
-
-.lobby-panel h1 {
-    font-size: 40px;
-    line-height: 40px;
-    color: #EBE8CD;
+    border: 2px solid #4a4332;
+    border-radius: 8px;
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer box shadow */
+    background: #5d5542; /* Simplified background */
 }
 
 .lobby-panel h1 a:hover {
     color: #fff;
 }
 
+.lobby-panel h1 {
+    font-size: 36px; /* Slightly smaller */
+    line-height: 40px;
+    color: #d8d1c1; /* Warmer text color */
+}
+
 .divider {
-    background-image: url(./images/divider.png);
+    background-image: url(./images/divider-subtle.png); /* More subtle divider */
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -371,97 +298,42 @@ h3 {
 
 .message {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller */
     line-height: 20px;
-
-    /* border styling */
-    border: 1px solid;
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-
-
-    /* internal styling - padding etc. */
-    /* typography */
+    border: 1px solid #4a4332; /* Softer border */
+    border-radius: 5px;
     font-family: KnightsQuestRegular;
-    font-size: 20px;
 }
 
-.good.message
-{
-    color: #fefff7;
-    -moz-text-shadow: -1px 1px 2px #363a19, 1px -1px 2px #363a19;
-    -webkit-text-shadow: -1px 1px 2px #363a19, 1px -1px 2px #363a19;
-    text-shadow: -1px 1px 2px #363a19, 1px -1px 1px #363a19;
-
-    /* colors */
-    border-color: #feffea;
-    -moz-box-shadow: 1px -1px 1px 0px #cbd3a9 , -1px 1px 2px #363a19, inset 0px 0px 10px #000;
-    -webkit-box-shadow: 1px -1px 1px 0px #cbd3a9 , -1px 1px 2px #363a19, inset 0px 0px 10px #000;
-    box-shadow: 1px -1px 1px 0px #cbd3a9 , -1px 1px 2px #363a19, inset 0px 0px 10px #000;
-
-    background: #718d16; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #789316 0%, #5d7a19 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#789316 ), color-stop(100%,#5d7a19)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #789316  0%,#5d7a19 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #789316  0%,#5d7a19 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #789316  0%,#5d7a19 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #789316  0%,#5d7a19 100%); /* W3C */
-
+.good.message {
+    color: #e8e3d3;
+    text-shadow: none; 
+    border-color: #6a8016;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background: #718d16; 
 }
 
-.bad.message
-{
-    color: #FFFCF7;
-    -moz-text-shadow: -1px 1px 2px #331100, 1px -1px 2px #331100;
-    -webkit-text-shadow: -1px 1px 2px #331100, 1px -1px 2px #331100;
-    text-shadow: -1px 1px 2px #331100, 1px -1px 1px #331100;
-
-    /* colors */
-    border-color: #feffea;
-    -moz-box-shadow: 1px -1px 1px 0px #D3AEA9 , -1px 1px 2px #331100, inset 0px 0px 10px #000;
-    -webkit-box-shadow: 1px -1px 1px 0px #D3AEA9 , -1px 1px 2px #331100, inset 0px 0px 10px #000;
-    box-shadow: 1px -1px 1px 0px #D3AEA9 , -1px 1px 2px #331100, inset 0px 0px 10px #000;
-
-    background: #521802; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #641E04 0%, #401100 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#641E04 ), color-stop(100%,#401100)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #641E04  0%,#401100 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #641E04  0%,#401100 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #641E04  0%,#401100 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #641E04  0%,#401100 100%); /* W3C */
-
+.bad.message {
+    color: #e8e3d3;
+    text-shadow: none;
+    border-color: #521802;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background: #641E04; 
 }
 
-.info.message
-{
-    color: #FFFCF7;
-    -moz-text-shadow: -1px 1px 2px #362301, 1px -1px 2px #362301;
-    -webkit-text-shadow: -1px 1px 2px #362301, 1px -1px 2px #362301;
-    text-shadow: -1px 1px 2px #362301, 1px -1px 1px #362301;
-
-    /* colors */
-    border-color: #feffea;
-    -moz-box-shadow: 1px -1px 1px 0px #D4C7AF , -1px 1px 2px #362301, inset 0px 0px 10px #000;
-    -webkit-box-shadow: 1px -1px 1px 0px #D4C7AF , -1px 1px 2px #362301, inset 0px 0px 10px #000;
-    box-shadow: 1px -1px 1px 0px #D4C7AF , -1px 1px 2px #362301, inset 0px 0px 10px #000;
-
-    background: #D09734; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #D09734 0%, #594118 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#D09734 ), color-stop(100%,#594118)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #D09734  0%,#594118 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #D09734  0%,#594118 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #D09734  0%,#594118 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #D09734  0%,#594118 100%); /* W3C */
-
+.info.message {
+    color: #e8e3d3; 
+    text-shadow: none;
+    border-color: #D09734;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background: #D09734; 
 }
-
 
 /* User profile page
 -------------------------------------------------------------- */
 
 .lobby-panel .statement {
-    background: url('./images/province_profile/scroll.png') no-repeat;
+    background: url('./images/scroll-subtle.png') no-repeat; /* More subtle scroll */
 }
 
 .lobby-panel .statement h2 {
@@ -481,32 +353,14 @@ h3 {
 }
 
 #game-navigation .current-date {
-
-    padding: 11px 0px;
-
+    padding: 8px 0px; /* Reduced padding */
     font-family: KnightsQuestRegular;
     font-size: 16px;
-    text-shadow: -1px 1px 2px black, 1px -1px 1px #FFCF68;
-
-    /* border styling */
-    border: 2px solid;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-
-
-    border-color: #555555;
-    -moz-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    -webkit-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-
-    background: #3a3830; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #3a3830 0%, #23221f 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3a3830), color-stop(100%,#23221f)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* W3C */
+    text-shadow: 0 1px 1px #000; /* Simplified shadow */
+    border: 2px solid #4a4332;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Simplified box shadow */
+    background: #3a3830; 
 }
 
 #game-navigation a {
@@ -518,59 +372,14 @@ h3 {
 
 }
 
-#resource-bar
-{
-    /* border styling */
-    border: 2px solid;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-
-    /* internal styling - padding etc. */
-
-    /* typography */
+#resource-bar {
+    border: 2px solid #4a4332;
+    border-radius: 5px;
     font-family: KnightsQuestRegular;
     font-size: 14px;
-
-    -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    -webkit-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    text-shadow: -1px 1px 2px #000, 1px -1px 1px #ffcf68;
-
-    /* colors */
-    border-color: #555555;
-    -moz-box-shadow:    0px -1px 1px #fffbf1,
-                                    inset 0px 1px 2px #000,
-                                    inset 0px -1px 1px #fffbf1,
-                                    0px 1px 1px #000,
-                                    -1px 0px 2px #000,
-                                    inset 1px 0px 1px #fffbf1,
-                                    inset -1px 0px 2px #000,
-                                    1px 0px 1px #fffbf1;
-    -webkit-box-shadow: 0px -1px 1px #fffbf1,
-                                        inset 0px 1px 2px #000,
-                                        inset 0px -1px 1px #fffbf1,
-                                        0px 1px 1px #000,
-                                        -1px 0px 2px #000,
-                                        inset 1px 0px 1px #fffbf1,
-                                        inset -1px 0px 2px #000,
-                                        1px 0px 1px #fffbf1;
-    box-shadow:     0px -1px 1px #fffbf1,
-                                inset 0px 1px 2px #000,
-                                inset 0px -1px 1px #fffbf1,
-                                0px 1px 1px #000,
-                                -1px 0px 2px #000,
-                                inset 1px 0px 1px #fffbf1,
-                                inset -1px 0px 2px #000,
-                                1px 0px 1px #fffbf1;
-
-    background: #d7d7d7; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #d7d7d7 0%, #353535 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d7d7d7), color-stop(100%,#353535)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* W3C */
-
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Simplified box shadow */
+    background: #d7d7d7; 
 }
 
 #resource-bar thead {
@@ -630,35 +439,13 @@ h3 {
 
 .game-content form,
 .game-content h2 {
-    border: 2px solid;
+    border: 2px solid #4a4332; /* Softer border color */
     border-left: 0px;
     border-right: 0px;
-
-    /* internal styling - padding etc. */
-
-    /* colors */
-    border-color: #181818;
-
-    -moz-box-shadow: inset 0px 0px 6px #000,
-                     inset -3px 3px 3px 2px #545454;
-    -webkit-box-shadow: inset 0px 0px 6px #000,
-                        inset -3px 3px 3px  2px #545454;
-    box-shadow: inset 0px 0px 6px #000,
-                inset -3px 3px 3px 2px #545454;
-
-    color: #fff;
-    -moz-text-shadow: -1px 1px 1px #000, 1px -1px 1px #69634D;
-    -webkit-text-shadow: -1px 1px 1px #000, 1px -1px 1px #69634D;
-    text-shadow: -1px 1px 1px #000, 1px -1px 1px #69634D;
-
-    background: rgb(86, 83, 74); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #d7d7d7 0%, #353535 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d7d7d7), color-stop(100%,#353535)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #d7d7d7 0%,#353535 100%); /* W3C */
-
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Simplified box shadow */
+    color: #e8e3d3; /* Slightly off-white text */
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
+    background: #5d5542; /* Simplified background */
 }
 
 .game-content h3 {
@@ -733,26 +520,14 @@ form textarea,
 form input[type=text],
 form input[type=password] {
     border-width: 1px;
-    border-color: #d7d7d7;
+    border-color: #4a4332; /* Softer border color */
     padding-left: 3px;
     font-family: KnightsQuestRegular;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller */
     text-align: left;
-
-    -moz-box-shadow: inset 0px 0px 4px #7c4a14;
-    -webkit-box-shadow: inset 0px 0px 4px #7c4a14;
-    box-shadow: inset 0px 0px 6px #000;
-
-    color: #fff;
-    background: #3a3830; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #3a3830 0%, #23221f 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3a3830), color-stop(100%,#23221f)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #3a3830 0%,#23221f 100%); /* W3C */
-
-
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2); /* Softer box shadow */
+    color: #e8e3d3; /* Slightly off-white */
+    background: #3a3830; 
 }
 
 form input[type=text],
@@ -828,17 +603,13 @@ form input[type=submit]:active,
 
 div.selector span,
 div.uploader span.filename,
-div.uploader span.action
-{
+div.uploader span.action {
     padding-left: 5px;
-    /* typography */
     font-family: KnightsQuestRegular;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller */
     font-weight: normal;
     text-align: left;
-    -moz-text-shadow: -1px 1px 2px #3d2f1a, 1px -1px 2px #3d2f1a;
-    -webkit-text-shadow: -1px 1px 2px #3d2f1a, 1px -1px 2px #3d2f1a;
-    text-shadow: -1px 1px 2px #3d2f1a, 1px -1px 1px #3d2f1a;
+    text-shadow: 0 1px 1px #000; /* Simplified text shadow */
 }
 div.uploader span.filename,
 div.uploader span.action
@@ -847,37 +618,28 @@ div.uploader span.action
 }
 
 .game-content form table {
-    border: 0px;
-    border-top: 2px solid;
-    border-color: #555555;
+    border: none; /* Removed border */
+    border-top: 2px solid #4a4332; /* Softer border color */
     margin-bottom: 10px;
-    -moz-box-shadow:    0px -1px 1px #fffbf1,
-                        inset 0px 1px 2px #000;
-    -webkit-box-shadow: 0px -1px 1px #fffbf1,
-                        inset 0px 1px 2px #000;
-    box-shadow:         0px -1px 1px #fffbf1,
-                        inset 0px 1px 2px #000;
-
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Simplified box shadow */
     text-align: left;
-
 }
 
 .game-content form table thead th {
-    height: 36px;
-
+    height: 30px; /* Reduced height */
     font-family: KnightsQuestRegular;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     vertical-align: bottom;
+    background: #4a4332; /* Simplified background */
 }
 
 .game-content form tbody th {
-    border-left: 2px ridge rgba(48, 48, 48, 0.4);
+    border-left: 2px solid rgba(74, 67, 50, 0.4); /* Softer border */
     font-family: KnightsQuestRegular;
-    font-size: 20px;
-
+    font-size: 16px; /* Slightly smaller */
 }
 
 .game-content form tbody th:first-child {
@@ -1282,13 +1044,7 @@ td.news-province-modification {
 
 /* GAME PREFERENCES */
 .game-content div.preference-box {
-    background: rgb(86, 83, 74); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #706e62 0%, #353535 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#898989), color-stop(100%,#353535)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #706e62 0%,#353535 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #706e62 0%,#353535 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #706e62 0%,#353535 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #706e62 0%,#353535 100%); /* W3C */
+    background: #605d4e; /* Simplified background */
 }
 
 .game-content div.preference-box.disabled {
@@ -1312,10 +1068,11 @@ table.mail-view td.formatted-text {
 }
 
 div.wysiwyg {
-    border: 1px solid #999;
+    border: 1px solid #605d4e; /* Softer border */
     padding: 5px;
-    background: rgb(86, 83, 74);
+    background: #504d43; /* Simplified background */
 }
+
 
 div.wysiwyg ul.toolbar li {
     background: url('./images/jquery.wysiwyg.gif') no-repeat -64px -80px;
@@ -1371,7 +1128,7 @@ body.wysiwyg {
 }
 
 #royal-command-icon:hover {
-    background-color: #494432;
+    background-color: #403d31; /* Slightly darker hover color */
 }
 
 .tablesorter th .order-icon {
@@ -1387,7 +1144,7 @@ body.wysiwyg {
 }
 
 .campaign-meter-level div {
-    border: 1px solid #789316;
+    border: 1px solid #6a8016; /* Softer border color */
 }
 
 .campaign-meter-level div.full {
@@ -1408,7 +1165,7 @@ body.wysiwyg {
 
 .recruitment-header .rank-bar,
 .campaigns .rank-bar {
-    background-color: #867721;
+    background-color: #766721; /* Slightly darker color */
 }
 
 .recruitment-header .selected-rank,
